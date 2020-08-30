@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav>
+      <router-link to="/">首页</router-link>
+      <router-link to="/form">表单</router-link>
+    </nav>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HomePages from "./pages/HomePages/HomePages";
+// import Form from "./components/Form";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HomePages,
+    // Form,
   }
 }
 </script>
